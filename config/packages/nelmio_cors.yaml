@@ -1,0 +1,7 @@
+nelmio_cors:
+    paths:
+        '^/api/transform/':
+           allow_credentials: true
+           allow_origin: ['%env(CORS_ALLOW_ORIGIN)%']
+           allow_methods: ['POST','OPTIONS']
+           max_age: 3600

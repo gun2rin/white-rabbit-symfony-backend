@@ -1,0 +1,10 @@
+api:
+    path: /api/transform/
+    controller: Rabbit\Controller\ApiController::transformImage
+    methods:  [POST, OPTIONS]
+
+download:
+    path: /download/{filename}
+    controller: Rabbit\Controller\DownloadController::download
+    methods:  [GET]
+
